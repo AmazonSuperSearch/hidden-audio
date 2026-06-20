@@ -167,7 +167,11 @@ body{
 </head>
 
 <body>
-
+<script>
+if (localStorage.getItem("archiveUnlocked") !== "true") {
+    window.location.href = "unlock.html";
+}
+</script>
 <section class="hero">
     <h1>🎧 25 More Free Hidden Audio Finds</h1>
 
